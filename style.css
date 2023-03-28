@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;800&family=Manrope:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kumbh sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, hsl(273, 75%, 66%),hsl(240, 73%, 65%) );
+    margin: 0;
+    background-repeat: no-repeat;
+    
+    
+}
+
+main {
+    width: 50%;
+    padding: 5%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+}
+
+.images {
+    position: relative;
+    width: 50%;
+    
+
+}
+
+.woman {
+    width: 120%;
+    position: absolute;
+    top: -10vw;
+    right: 5vw;
+    overflow: hidden;
+   
+}
+.box{
+    position: fixed;
+    top: 19.5vw;
+    left: 17vw;
+}
+
+.pattern {
+    position: absolute;
+    width: 200%;
+    bottom: -18vw;
+    right: 5vw;
+    
+    
+}
+
+.faq {
+  width: 50%;
+  font-size: 12px;
+  justify-content: left;
+  text-align: left;
+  font-weight: 800;
+}
+
+.buttons {
+    background-color: white;
+    border-style: none;
+
+}
+
+
+.answer {
+    display: none;
+    color:  hsl(240, 6%, 50%);
+}
+
+.question{
+    font-weight: 500;
+    color: hsl(237, 12%, 33%);
+    
+}
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+
+.footer {
+    display: none;
+}
+
+/* active state*/
+
+.active .answer {
+    display: flex;
+    text-align: center;
+}
+
+.active .question {
+    font-weight: 800;
+}
+.active .arrows {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 600px) {
+    main {
+        width: 80%;
+        padding: 5%;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .faq {
+        width: 50%;
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+        font-weight: 800;
+      }
+
+    .images {
+        position: relative;
+        width: 50%;
+        display: none;
+    }
+
+    
+}
